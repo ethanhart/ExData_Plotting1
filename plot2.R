@@ -5,8 +5,8 @@ plot2 <- function () {
     data_date_sub <- data[data$Date == "1/2/2007" | data_$Date == "2/2/2007",]
 
     # Create date objects (for x-axis)
-    dt<-paste(data_date_sub$Date,data_date_sub$Time)
-    dt<-strptime(dt,"%d/%m/%Y %T")
+    dt <- paste(data_date_sub$Date, data_date_sub$Time)
+    dt <- strptime(dt, "%d/%m/%Y %T")
 
     # Create histogram in png
     png(filename="plot2.png", width=480, height=480, units="px")
