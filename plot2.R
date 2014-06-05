@@ -2,7 +2,7 @@ plot2 <- function () {
     data <- read.table("./household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
     # Subset data by date
-    data_date_sub <- data[data$Date == "1/2/2007" | data_$Date == "2/2/2007",]
+    data_date_sub <- data[data$Date == "1/2/2007" | data$Date == "2/2/2007",]
 
     # Create date objects (for x-axis)
     dt <- paste(data_date_sub$Date, data_date_sub$Time)
